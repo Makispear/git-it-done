@@ -55,7 +55,6 @@ let displayRepos = (repos, searchTerm) => {
     titleEl.textContent = repoName;
     repoEl.appendChild(titleEl);
     repoContainerEl.appendChild(repoEl);
-  }
   // create a status element
   var statusEl = document.createElement("span");
   statusEl.classList = "flex-row align-center";
@@ -65,5 +64,6 @@ let displayRepos = (repos, searchTerm) => {
     statusEl.innerHTML = `<i class='fas fa-check-square status-icon icon-success'></i>`;
   }
   repoEl.appendChild(statusEl);
+}
 }
 
