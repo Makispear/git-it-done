@@ -22,6 +22,7 @@ var getUserRepos = (user) => {
     .then((response) => {
       if (response.ok) {
         response.json().then((data) => {
+          console.log(data)
           displayRepos(data, user);
         });
       } else {
